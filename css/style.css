@@ -1,0 +1,215 @@
+body {
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+}
+
+header {
+    background-image: url(../images/mobile/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 550px;
+}
+
+nav {
+    padding: 2em;
+}
+
+.hamburger {
+    float: right;
+    cursor: pointer;
+}
+
+nav ul {
+    display: none;
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding: 1em ;
+    line-height: 1.5em;
+}
+
+.arrow {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.grid-desktop img, .grid img {
+    width: 100%;
+}
+
+.square {
+    padding: 4em 2em;
+}
+
+h2{
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    color:hsl(212, 27%, 19%);
+}
+
+.square p {
+    text-align: center;
+    line-height: 1.6em;
+    padding: 2em 0;
+    color: hsl(232, 10%, 55%);
+    font-size: 19px;
+}
+
+.square div {
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    color:hsl(212, 27%, 19%);
+    font-weight: 900;
+    text-align: center;
+}
+div a {
+    position: relative;
+ }
+
+ div a::after {
+    content: "";
+    border-radius: 5px;
+    position: absolute;
+    width: calc(100% + 20px);
+    height: 10px; 
+    bottom: -2px;
+    right: -10px;
+    z-index: -100;
+}
+
+.softRed a::after {
+    background-color: hsl(7, 99%, 70%, 30%);
+}
+
+.softRed a:hover::after {
+    background-color: hsl(7, 99%, 70%);
+}
+
+.yellow a::after {
+    background-color: hsl(51, 100%, 49%, 30%);
+}
+
+.yellow a:hover::after {
+    background-color: hsl(51, 100%, 49%);
+}
+
+.rectangle {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 600px;
+}
+
+.graphicDesign{
+    background-image: url(../images/mobile/image-graphic-design.jpg);
+}
+
+.photography{
+    background-image: url(../images/mobile/image-photography.jpg);
+}
+
+h3 {
+    padding-top: 14em;
+    font-family: 'Fraunces', serif;
+    font-size: 1.6em;
+    font-weight: 900;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.rectangle p {
+    padding: 2em 1em;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 16px;
+}
+
+.graphicDesign h3, .graphicDesign p {
+    color:hsl(167, 40%, 24%);
+}
+
+.photography h3, .photography p {
+    color:hsl(198, 62%, 26%)
+}
+
+h4 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: 'Fraunces', serif;
+    padding : 3.5em 1em;
+    font-weight: 900;
+    color:  hsl(210, 4%, 67%);
+}
+.reviews p {
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.reviews img {
+    width: 80px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.comment {
+    padding: 2em;
+    line-height: 1.8em;
+    color:hsl(213, 9%, 39%)
+}
+
+.name {
+    padding-bottom: 1em;
+    font-family: 'Fraunces', serif;
+    font-weight:900;
+    font-size: 1.1em;
+}
+
+.profession {
+    font-size: 0.9em;
+    color: hsl(210, 4%, 67%);
+    padding-bottom: 3.5em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer{
+    background-color: #90D4C5;
+    padding: 4em 2em;
+}
+
+footer li {
+    color: hsl(168, 34%, 41%);
+}
+
+.logoFooter {
+    display: block;
+    margin: auto;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 0 5em 0;
+}
+
+footer .socialMedia {
+    padding: 0 4.5em;
+}
