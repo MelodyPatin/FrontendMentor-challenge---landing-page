@@ -3,6 +3,8 @@ body {
     font-family: 'Barlow', sans-serif;
 }
 
+/* HEADER */
+
 header {
     background-image: url(../images/mobile/image-header.jpg);
     background-size: cover;
@@ -77,6 +79,8 @@ h1{
     margin-right: auto;
     display: block;
 }
+
+/* MAIN */
 
 .grid-desktop img, .grid img {
     width: 100%;
@@ -162,7 +166,8 @@ div a {
 .graphicDesign, .photography {
     position: absolute;
     z-index: 200;
-    bottom: 0;
+    top: 75%;
+    width: 100%;
 }
 
 h3 {
@@ -236,6 +241,8 @@ h4 {
     grid-template-columns: repeat(2, 1fr);
 }
 
+/* FOOTER */
+
 footer{
     background-color: #90D4C5;
     padding: 4em 2em;
@@ -260,85 +267,15 @@ footer .socialMedia {
     padding: 0 4.5em;
 }
 
-@media screen and (min-width: 1439px){
+/* 900px - 1439px */
+
+@media screen and (min-width: 900px){
+
+    /* HEADER */
 
     header {
-        background-image: url(../images/desktop/image-header.jpg)
-    }
-
-    .container{
-        display: flex;
-        width: 100%;
-    }
-
-    .img-mobile {
-        display: none;
-    }
-
-    .img-desktop{
-        display: block;
-        flex: 1;
-    }
-
-    .square {
-        padding: 8em 5em 8em 8em;
-        flex: 1;
-        max-width: 50%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    h2, .square p , .square div{
-        text-align: start;
-    }
-
-    header {
-        height: 750px;
-    }
-    
-    h1{
-        padding-bottom: 2.5em;
-        letter-spacing: 0.2em;
-        font-size: 2.5em;
-    }
-
-    .rectangle {
-        width: 50%;
-    }
-
-    .graphicDesign, .photography {
-        padding: 0 9em;
-    }
-
-    .grid {
-        display: flex;
-    }
-
-    .grid img {
-        width: 25%;
-    }
-
-    .reviews{
-        display: flex;
-        padding: 2em 12% 5em 12%;
-    }
-
-    h4 {
-        padding-top: 7em;
-    }
-
-    .comment {
-        padding-bottom: 4em;
-    }
-
-    footer ul {
-        padding: 2em 38% 5em 38%;
-    }
-
-    ul.socialMedia {
-        padding: 0 43%;
+        background-image: url(../images/desktop/image-header.jpg);
+        height: 700px;
     }
 
     .hamburger {
@@ -377,6 +314,128 @@ footer .socialMedia {
     .contact {
         font-size: 0.8em;
         background-color: white;
+    }
+
+    /* MAIN */
+
+    .container {
+        display: flex;
+        width: 100%;
+    }
+
+    .square {
+        padding: 8em 5em 8em 8em;
+        flex: 1;
+        max-width: 50%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h2, .square p , .square div{
+        text-align: start;
+    }
+
+    .img-mobile {
+        display: none;
+    }
+
+    .img-desktop {
+        display: block;
+        flex: 1;
+    }
+
+    .graphicDesign, .photography {
+        padding: 0 15%;
+        top: 55%;
+    }
+
+    .grid-desktop img {
+        width: 50%;
+    }
+
+    .rectangle img {
+        width: 100%;
+    }
+
+    .grid {
+        display: flex;
+    }
+
+    .grid img {
+        width: 25%;
+    }
+
+    /* FOOTER */
+
+    footer ul {
+        padding: 2em 35% 5em 35%;
+    }
+
+    ul.socialMedia {
+        padding: 0 40%;
+    }
+}
+
+/*1440px and + */ 
+
+@media screen and (min-width: 1439px){
+
+    /* HEADER */
+
+    header {
+        height: 750px;
+    }
+    
+    h1{
+        padding-bottom: 2.5em;
+        letter-spacing: 0.2em;
+        font-size: 2.5em;
+    }
+
+    /* MAIN */
+
+    .img-mobile {
+        display: none;
+    }
+
+    .img-desktop{
+        display: block;
+        flex: 1;
+        width: 25%;
+    }
+
+    .rectangle {
+        width: 50%;
+    }
+
+    .graphicDesign, .photography {
+        padding: 0 9em;
+        top: 65%;
+    }
+
+    .reviews{
+        display: flex;
+        padding: 2em 12% 5em 12%;
+    }
+
+    h4 {
+        padding-top: 7em;
+    }
+
+    .comment {
+        padding-bottom: 4em;
+    }
+
+    /* FOOTER */
+
+    footer ul {
+        padding: 2em 38% 5em 38%;
+    }
+
+    ul.socialMedia {
+        padding: 0 43%;
     }
 
 }
