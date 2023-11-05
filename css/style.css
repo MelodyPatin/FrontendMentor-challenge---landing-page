@@ -107,7 +107,7 @@ h2{
     line-height: 1.6em;
     padding: 2em 0;
     color: hsl(232, 10%, 55%);
-    font-size: 19px;
+    font-size: 16px;
 }
 
 .square div {
@@ -166,7 +166,7 @@ div a {
 .graphicDesign, .photography {
     position: absolute;
     z-index: 200;
-    top: 75%;
+    top: 70%;
     width: 100%;
 }
 
@@ -252,6 +252,10 @@ footer li {
     color: hsl(168, 34%, 41%);
 }
 
+footer li:hover {
+    color: white;
+}
+
 .logoFooter {
     display: block;
     margin: auto;
@@ -266,6 +270,9 @@ footer ul {
 footer .socialMedia {
     padding: 0 4.5em;
 }
+
+
+
 
 /* 900px - 1439px */
 
@@ -314,6 +321,11 @@ footer .socialMedia {
     .contact {
         font-size: 0.8em;
         background-color: white;
+    }
+
+    .contact:hover {
+        background-color: rgba(255, 255, 255, 0.5);;
+        color: white;
     }
 
     /* MAIN */
